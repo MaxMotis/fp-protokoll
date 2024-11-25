@@ -1,0 +1,18 @@
+\begin{table}[ht] %h: ~hier; t: top; b: bottom; p: eigene Seite; !: streng; H: wie h!
+    \centering
+    \caption[Tabellen-Template]{Tabellen-Template} %Name in [] taucht im Tabellenverzeichnis auf
+    \begin{tabular}[t]{|c||c c c c c c|} % 
+    %\hline vs \<top-/bottom-/mid>rule: hline lässt vertikale Linien unangetastet
+    %<x>rule trennt die vertikalen Linien auf -> kann man vl mit rumspielen
+        \toprule
+        a & b & b & b & b & b & b \\
+        \hline
+        c & d & d & d & d & d & d \\
+        c & d & d & d & d & d & d \\
+        \cline{2-4} %hline zwischen Spalten 2 und 4
+        c & d & d & d & d & d & d \\
+        c & d & d & d & d & d & d \\
+        \bottomrule
+    \end{tabular}
+    \label{tabel:1} %Verweise mit \ref{table:1} darauf
+\end{table}

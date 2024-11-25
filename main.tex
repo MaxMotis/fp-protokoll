@@ -1,0 +1,77 @@
+\documentclass[ipkm]{source/fpprotokoll}
+	
+\input{source/packages.tex}
+
+\addbibresource{source/bib.bib}
+\defbibheading{lit}{\section*{Literaturverzeichnis}}
+
+\Versuchsbezeichnung{\texorpdfstring{Versuch X.XX: \\Titel}{}}
+\AutorA{Alice Ackermann}
+\MnrAutorA{0000000}
+\AutorB{}
+\MnrAutorB{}
+\Betreuung{Bernd Betreuer*in (m/w/d)}
+\Datum{}
+
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{naturalnames}{hyperref}
+
+
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+
+
+%Eigenständigkeitserklärung wird eingefügt (Autoren anzupassen)
+\paragraph{Erklärung zur Selbständigkeit:} \mbox{} \\
+Hiermit versichern wir, die vorliegende Ausarbeitung des Fortgeschrittenen-Praktikums ohne Hilfe Dritter und nur mit den angegebenen Quellen und Hilfsmitteln angefertigt zu haben. Alle Stellen, die aus Quellen entnommen wurden, sind als solche kenntlich gemacht. Diese Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen. 	\vspace*{3\baselineskip}
+
+\comment{\paragraph{Declaration of Authorship} \mbox{} \\
+We hereby certify that this report has been composed by us and is based on our own work, unless
+stated otherwise. No third person’s work has been used without due acknowledgement in this
+report. All references and verbatim extracts have been quoted, and all sources of information,
+including graphs and data sets, have been specifically acknowledged. 	\vspace*{3\baselineskip}}
+
+\begin{center}
+    \begin{tabular}{ccc}
+    	\rule{5cm}{0.1mm} & \hspace{8em}& \rule{5cm}{0.1mm}\\
+    	\DefAutorA &\hspace{8em} & \DefAutorB \\
+    \end{tabular}
+\end{center}
+
+\newpage
+
+%Inhaltsverzeichnis wird eingefügt
+\tableofcontents
+\listoftables
+
+\newpage
+
+\section*{Ziel des Versuches}
+\input{content/versuchsziel.tex}
+%"Ziel des Versuches" wird zum Inhaltsverzeichnis hinzugefügt
+\addcontentsline{toc}{section}{Ziel des Versuches}
+
+\newpage
+
+\section{Physikalische Grundlagen}
+\input{content/grundlagen.tex}
+
+\newpage
+
+\section{Durchführung und Auswertung}
+\input{content/auswertung.tex}
+
+\newpage
+\section{Fazit}
+\input{content/fazit.tex}
+
+\newpage
+%Bibliographie wird eingefügt
+
+\printbibliography[heading=lit]
+%"Literaturverzeichnis" wird zum Inhaltsverzeichnis hinzugefügt
+\addcontentsline{toc}{section}{Literaturverzeichnis} 
+
+\end{document}

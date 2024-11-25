@@ -1,0 +1,37 @@
+\begin{table}[h]
+    \caption{tabularx-template}
+    \label{tablex:1}
+    \begin{tabularx}{\textwidth}{ X||ccc  } % X wird in p{<width>} umgewandelt
+    	\hline
+    	\multicolumn{4}{|c|}{wokwokso} \\ %es können auch mehrere multicols mit & verbunden werden
+    	\hline
+    	Country Name or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 Code&ISO numeric Code\\
+    	\hline
+    	Afghanistan   & AF    &AFG&   004\\
+    	Aland Islands&   AX  & ALA   &248\\
+    	Albania &AL & ALB&  008\\
+    	Algeria    &DZ & DZA&  012\\
+    	American Samoa&   AS  & ASM&016\\
+    	Andorra& AD  & AND   &020\\
+    	Angola& AO  & AGO&024\\
+    	\hline
+    \end{tabularx}
+\end{table}
+
+%von Katrin
+\begin{table}[ht]
+    \centering
+     \caption[Mittlere relative Transmission]{Mittlere relative Transmission im Plateau-Bereich und maximaler Abstand zwischen den Schwankungen. Für den letzten Wert wurde die Attenuation des Channels auf 10 dBm gesetzt.}
+    \begin{tabular}{c c c c c  }
+        \toprule
+        ADP &  & Leistung in & in dBm & Abstand in $\cdot 10^{-2}$  \\
+        \midrule
+        5 & & 45,28 & -3,44 & 6,62 \\
+        2 & & 44,06 & -3,56 & 6,59 \\
+        7 & & 45,30 & -3,44 & 11,98 \\
+        4 & & 45,48 & -3,42 & 5,88 \\
+        4 & 10 dBm & 4,65 & -13,32 & 1,10 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:Mittelwerte}
+\end{table}

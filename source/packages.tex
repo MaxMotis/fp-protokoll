@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\usepackage{picins}
+
+
+
+
+%------ math stuff --------------
+\usepackage{amsfonts} % für verschiedene Fonts, z.b. Blackbaord Bold
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+%\usepackage{mathtools} %mehr Kontrolle über (das statische Paket) amsmath
+\usepackage{unicode-math} %typesetting von verschiedenen Symbolen, insbesondere aufrechte griechische Buchstaben
+%\usepackage{bm} % kann Math-Symbole fett machen
+
+
+%------- counter ----------------
+\usepackage{chngcntr} %Zum Ändern der Nummerierung von Equations und so
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+%\numberwithin{equation}{subsection}
+
+
+%-------- physics typesetting ----------
+\usepackage{physics}
+%\usepackage[arrowdel]{physics} %Verwende das für Nabla mit Vektorpfeil
+%\usepackage{esvect} %für bessere und verschiedene Vektorpfeile
+%\usepackage{siunitx} %für den Umgang mit Einheiten und so
+%\sisetup{locale = DE}
+
+
+%-------- general document stuff ----------
+\usepackage{import} %falls eine importierte Datei weitere \input{}s hat
+%\usepackage{multicol} %um Text in mehreren Spalten aufzureihen
+%\usepackage{xcolor} %für besseres Farben-Management
+\usepackage{hologo} % Logos für verschiedene \Latex Varianten
+\usepackage[english, main=ngerman]{babel}
+
+
+%------- eigene control sequences --------------
+\newcommand{\comment}[1]{} % Verwendet, um ganze Textblöcke auszukommentieren
+\renewcommand{\r}[1]{\mathrm{#1}} % handliche Version von \mathrm
+
+%-------- citation crustacean  -----------------
+\usepackage[backend=biber,sorting = none, style=phys]{biblatex}
+\usepackage{hyperref} %verschiedene Möglichkeiten, Referencen und on-click jumps einzufügen
+\usepackage[autostyle]{csquotes}
+
+%--------- tabel stuff -----------------
+\usepackage{booktabs} %viel bessere Tabellen (visuell)
+\usepackage{multirow} %für Tabellen und Aufreihung mit großen Klammern zur Verbindung
+\usepackage{tabularx} %soll ein besseres Tabellenenvironment sein
+
+%----------- allgemeiner float Kram -------------
+\usepackage{subcaption} %captions für subfigures
+%\usepackage{float} %mehr float Optionen
+%\usepackage{floatflt} %mehr float Optionen
+\usepackage{graphicx} %Grafiken einfügen u.v.m
+%\usepackage{caption} %für caption-control von floating envs, optionen z.B. [margin=10pt,font=small,labelfont=bf,labelsep=endash]
